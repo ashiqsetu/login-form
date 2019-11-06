@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,23 +13,32 @@
 <div class="main-wrapper">
   <div class="main" id="main">
     <div class="login lrAnimation">
-      <form id="loginForm" class="bal" action="index.html" method="post" autocomplete="off">
-        <input id="loginUserName" type="text" name="loginUserName" placeholder="Username" >
-        <input id="loginPassword" type="password" name="loginPassword" placeholder="Password" >
+      <form id="loginForm" action="#" method="post" autocomplete="off">
+          <input id="loginUserName" type="text" name="loginUserName" placeholder="Username" >
+          <span id="loginUserNameText" class="text-danger"> </span>
+          <input id="loginPassword" type="password" name="loginPassword" placeholder="Password" >
+          <span id="loginPasswordText" class="text-danger"></span>
         <a id="passwordRecovery" href="#">Forget your Password?</a><br>
         <button id="loginSubmitBtn" type="submit" name="button">Login</button>
         <!-- <p class="message">Create a account! <a id="registerLink" href="#">Register</a></p> -->
       </form>
     </div>
     <div class="register lrAnimation">
-      <form id="registerForm" action="index.html" method="post" autocomplete="off">
-        <input id="registerFirstName" type="text" name="registerFirstName" placeholder="Firstname" required>
-        <input id="registerLastName" type="text" name="registerLastName" placeholder="Lastname" required>
-        <input id="registerUserName" type="text" name="registerUserName" placeholder="Username" required>
-        <input id="registerPassword" type="password" name="registerPassword" placeholder="Password" required>
-        <input id="registerConfirmPassword" type="password" name="registerConfirmPassword" placeholder="Confirm Password" required>
-        <input id="registerEmail" type="email" name="registerEmail" placeholder="Email" required>
-        <!-- <input id="registerPhoneNumber" type="email" name="registerPhoneNumber" placeholder="Phone Number" required> -->
+      <form id="registerForm" action="#" method="post" autocomplete="off">
+        <input id="registerFirstName" type="text" name="registerFirstName" placeholder="Firstname">
+        <span id="registerFirstNameText" class="text-danger"> </span>
+        <input id="registerLastName" type="text" name="registerLastName" placeholder="Lastname">
+        <span id="registerLastNameText" class="text-danger"> </span>
+        <input id="registerUserName" type="text" name="registerUserName" placeholder="Username">
+        <span id="registerUserNameText" class="text-danger"> </span>
+        <input id="registerPassword" type="password" name="registerPassword" placeholder="Password">
+        <span id="registerPasswordText" class="text-danger"> </span>
+        <input id="registerConfirmPassword" type="password" name="registerConfirmPassword" placeholder="Confirm Password">
+        <span id="registerConfirmPasswordText" class="text-danger"> </span>
+        <input id="registerEmail" type="email" name="registerEmail" placeholder="Email">
+        <span id="registerEmailText" class="text-danger"> </span>
+        <input id="registerPhoneNumber" type="email" name="registerPhoneNumber" placeholder="Phone Number">
+        <span id="registerPhoneNumberText" class="text-danger"> </span>
         <button id="registerSubmitBtn" type="submit" name="button">Register</button>
         <!-- <p class="message">Already have a account? <a id="loginLink" href="#">Login</a></p> -->
       </form>
@@ -50,6 +60,16 @@
   </div>
 </div>
   <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
+  <!-- <script>
+    function validate() {
+      let loginUserName = document.getElementById('loginUserName').value;
+      if(loginUserName == ""){
+        document.getElementById("loginPasswordText").innerHTML = "*Please fill the username field!";
+        return false;
+      }
+    }
+  </script> -->
 </body>
 </html>

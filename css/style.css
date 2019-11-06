@@ -19,7 +19,7 @@ body {
 input {
   width: 80%;
   background: #fff;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   bottom: 0;
   padding: 15px;
   box-sizing: border-box;
@@ -33,12 +33,23 @@ input:focus {
   outline: none;
   border-color: #aaa;
 }
-#registerFirstName,
+/* #registerFirstName,
 #registerLastName,
 #registerPassword,
 #registerConfirmPassword {
   width: 40%;
+} */
+
+span {
+    display: block;
+    line-height: 1;
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 10px;
 }
+/* .register span {
+  display: inline-block;
+} */
 
 button {
   background: #232323;
@@ -62,6 +73,9 @@ button:hover {
   background: #fff;
   color: #232323;
   border-color: #232323;
+}
+button:focus {
+  outline: none;
 }
 .overlay-panel button {
   background: #fff;
@@ -117,13 +131,13 @@ button:hover {
 
 .main{
   position: relative;
-  height: 500px;
-  width: 60%;
+  height: 600px;
+  width: 70%;
   margin: auto;
   text-align: center;
   max-width: 100%;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 2px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -149,7 +163,7 @@ button:hover {
   margin-top: 115px;
 }
 #registerForm {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .register {
@@ -197,6 +211,7 @@ button:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+  border-radius: 2px;
 	color: #FFFFFF;
 	position: relative;
 	left: -100%;
